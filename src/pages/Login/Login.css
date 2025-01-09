@@ -1,0 +1,156 @@
+.login {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/background_banner.jpg);
+  background-size: cover;
+  position: relative;
+  padding: 0 4%;
+}
+
+.login-logo {
+  width: 150px;
+  padding: 20px 0;
+}
+
+.login-form {
+  max-width: 450px;
+  margin: 30px auto;
+  padding: 60px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  color: white;
+}
+
+.login-form h1 {
+  font-size: 32px;
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  height: 50px;
+  padding: 16px 20px;
+  background: #333;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+}
+
+.login-form input::placeholder {
+  color: #8c8c8c;
+}
+
+.login-form input:focus {
+  background: #454545;
+  outline: none;
+}
+
+.login-form button {
+  margin-top: 24px;
+  width: 100%;
+  height: 50px;
+  background: #e50914;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.login-form button:hover {
+  background: #f40612;
+}
+
+.form-help {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b3b3b3;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.remember input[type="checkbox"] {
+  background: #737373;
+  border-radius: 2px;
+  border: 0;
+  height: 16px;
+  width: 16px;
+  accent-color: #737373;
+}
+
+.form-help p {
+  cursor: pointer;
+}
+
+.form-help p:hover {
+  text-decoration: underline;
+}
+.form-switch {
+  margin-top: 40px;
+  color: #737373;
+}
+.form-switch span {
+  margin-left: 6px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.login-spinner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-spinner img {
+  width: 60px;
+}
+
+@media (max-width: 740px) {
+  .login-form {
+    padding: 40px;
+    margin: 20px auto;
+  }
+
+  .login-logo {
+    width: 120px;
+  }
+}
+
+@media (max-width: 500px) {
+  .login-form {
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .login-form h1 {
+    font-size: 28px;
+  }
+
+  .login-logo {
+    width: 100px;
+  }
+
+  .login {
+    padding: 0 20px;
+  }
+}
